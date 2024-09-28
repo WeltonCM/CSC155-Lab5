@@ -1,7 +1,7 @@
 /*
 Name: Lab5_Welton
 Author: Christopher Welton
-Description: This program plays the 'Game of Nim' with the computer and human player 
+Description: This program takes a users first and last name, then prints it with a number value and increasing spaces. 
 */
 #include <iostream>
 #include <string>
