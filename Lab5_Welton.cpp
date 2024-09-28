@@ -17,15 +17,20 @@ void printSpaces(int spaces){
 void process(string name){
     int count = 1;
     int frontNum = 1;
-    int spaceLocation = name.find(' ');
-    cout << "Space location " << spaceLocation << endl;
+    int spaceLocation = name.find(" ");
     for(int i = 0; i < name.size(); i++){
         if(i == spaceLocation){
             frontNum = 2;
+            cout << "\n"; 
+            count ++;
+            continue;
         }
-        if(frontNum >= )
         cout << frontNum; 
-        printSpaces(count);
+        if(frontNum >= 10){
+            printSpaces(count -1);
+        } else {
+            printSpaces(count);
+        }
         cout << char(toupper(name[i])) << endl;
         frontNum += 2;
         count ++;
@@ -34,9 +39,8 @@ void process(string name){
 
 int main(){
     string name;
-    cout << "Please enter your first and last name separated by a space: " << endl;
+    cout << "Please enter your name: " << endl;
     getline(cin, name);
-    cout<< "The name input was : " << name;
     process(name);
     
     
